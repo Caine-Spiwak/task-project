@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task App</title>
+    <script src="https://kit.fontawesome.com/9044fffae2.js" crossorigin="anonymous"></script>
+<script defer src="bundle.js"></script></head>
+<body>
+    <div id="window">
+        <div id="header"></div>
+        
+        <!-- S I D E B A R -->
+        <div id="sidebar">
+            <button data-open-project-modal>New Project</button>
+            <div>Projects</div>
+            <div id="project-content">
+                <ol id="project-list">
+                    <!-- <li data-project-index=0 class='project'>Example Project</li> -->
+                    <!-- <li class="project">Financial</li>
+                    <li class="project">Health</li> -->
+                </ol>
+            </div>
+        </div>
+        <!-- S I D E B A R -->
+        
+        <!-- C O N T E N T -->
+        <div id="content">
+            <button data-open-modal>New Task</button>
+            <div id="task-content">
+                <!-- <div class="task">
+                    <div class="task-row">
+                        <div class="task-title">Example Task</div>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </div>
+                    <div class="task-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto est, illum accusamus veniam error pariatur dicta repellat aperiam laboriosam. Error.</div>
+                    <div class="task-row task-btm-row">
+                        <div class="task-due-date">2023-11-02</div>
+                        <div class="task-priority">3</div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- C O N T E N T -->
+
+    </div>
+
+    <!-- New Task Modal -->
+    <dialog data-modal id="new-task-modal">
+        <form id="new-task-form">
+            <div class="form-header">
+                <span>Add A New Task</span>
+                <i data-close-modal class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="form-row">
+                <label for="title">Title:</label>
+                <input name="title" type="text" placeholder="title" id="title">
+            </div>
+            <div class="form-row">
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" cols="30" rows="10" placeholder="What to do..."></textarea>
+            </div>
+            <div class="form-row">
+                <label for="date">Due Date:</label>
+                <input name="date" type="date" id="dueDate">
+            </div>
+            <div class="form-row">
+                <label for="priority">Priority:</label>
+                <input name="priority" type="number" placeholder="1 - 5" id="priority" min="1" max="5">
+            </div>
+
+            <button id="add-task-btn" type="submit">Add Task</button>
+        </form>
+    </dialog>
+
+    <!-- New Project Modal -->
+    <dialog data-project-modal id="new-project-modal">
+        <form id="new-project-form">
+            <div class="form-header">
+                <span>New Project</span>
+                <i data-close-project-modal class="fa-regular fa-circle-xmark"></i>
+            </div>
+
+            <div class="form-row">
+                <label for="project-name">Project Name:</label>
+                <input name="project-name" type="text" placeholder="Project Name" id="project-name">
+            </div>
+
+            <button id="add-project-btn" type="submit">Add Project</button>
+        </form>
+    </dialog>
+
+</body>
+</html>
