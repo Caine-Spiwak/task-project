@@ -1,15 +1,14 @@
-import newProjectModal from './new-project-modal';
-// import renderTasks from './renderTasks';
-// import setDefaultActiveProject from './setDefaultActiveProject';
-// import setActiveProject from './setActiveProject';
-import renderProjectNames from './renderProjectNames';
-// import getActiveProject from './getActiveProject';
-// import renderDefaultTasks from './renderDefaultTasks';
-import initialActiveProject from './initialActiveProject';
-import './style.css'
-import renderTasks2 from './renderTasks2';
-import changeActiveProject from './changeActiveProject';
-import newTaskModal from './new-task-modal';
+import renderProjectNames from './js/renderProjectNames';
+import initialActiveProject from './js/initialActiveProject';
+import renderTasks2 from './js/renderTasks2';
+import newProjectModal from './js/new-project-modal';
+import changeActiveProject from './js/changeActiveProject';
+import newTaskModal from './js/new-task-modal';
+
+// IMPORT CSS
+import './main.css'
+import './css/structure.css'
+
 
 // RENDER PROJECT NAMES
 renderProjectNames();
@@ -28,19 +27,3 @@ changeActiveProject();
 
 // ADD TASK MODAL
 newTaskModal();
-// setDefaultActiveProject();
-// setActiveProject(0);
-// setActiveProject();
-
-// renderDefaultTasks();
-// renderTasks();
-
-// newProjectModal();
-
-// newTaskModal();
-
-
-
-
-
-
