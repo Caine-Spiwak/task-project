@@ -5,117 +5,22 @@
   box-sizing: border-box;
 }
 
+ol,
+ul {
+  list-style: none;
+}
+
 @font-face {
-    font-family: 'MyFont';
-    src: url('./assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
-      url('./assets/fonts/roboto-regular-webfont.woff') format('woff');
+  font-family: 'MyFont';
+  src: url('./assets/fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('./assets/fonts/roboto-regular-webfont.woff') format('woff');
 }
 
 #window {
   display: grid;
-  grid-template-columns: minmax(250px, 15vw) 85vw;
+  grid-template-columns: minmax(250px, 20vw) 80vw;
 }
 
-#content>button {
-  width: 25%;
-  padding: 10px 0;
-}
-
-/* New Task Modal */
-#new-task-modal,
-#new-project-modal {
-  position: fixed;
-  padding: 0.5rem;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  border-radius: 0.25rem;
-}
-
-#new-task-modal>form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-#new-task-modal>form>div>i {
-  margin-left: auto;
-  cursor: pointer;
-}
-
-#new-task-modal>form>div>span {
-  font-weight: 700;
-}
-
-#new-task-modal>form>div>input {
-  padding: 4px;
-}
-
-.form-header {
-  display: flex;
-}
-
-.form-row {
-  display: flex;
-  flex-direction: column;
-}
-
-#add-task-btn {
-  padding: 4px;
-}
-
-#description {
-  padding: 4px;
-}
-
-/* Tasks */
-#task-content {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
-  gap: 50px;
-  margin: 20px;
-}
-
-.task {
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 250px;
-  height: 250px;
-  padding: 15px;
-  background: #eee;
-  border-radius: .25rem;
-}
-
-.task-row {
-  display: flex;
-}
-
-.task-row>.fa-solid {
-  margin-left: auto;
-}
-
-.task-priority {
-  margin-left: auto;
-}
-
-.task-description {
-  background: white;
-  padding: 10px;
-  border-radius: .25rem;
-}
-
-.task-title {
-  font-weight: 700;
-}
-
-.task-btm-row {
-  margin-top: auto;
-}
-
-/* Projects */
 .active {
- background: rgba(0, 0, 255, 0.3);
+  background: rgba(0, 0, 255, 0.3);
 }

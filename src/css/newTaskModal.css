@@ -1,0 +1,46 @@
+/* New Task Modal */
+#new-task-modal,
+#new-project-modal {
+  position: fixed;
+  padding: 0.5rem;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 0.25rem;
+}
+
+#new-task-modal>form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#new-task-modal>form>div>i {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+#new-task-modal>form>div>span {
+  font-weight: 700;
+}
+
+#new-task-modal>form>div>input {
+  padding: 4px;
+}
+
+.form-header {
+  display: flex;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+}
+
+#add-task-btn {
+  padding: 4px;
+}
+
+#description {
+  padding: 4px;
+}

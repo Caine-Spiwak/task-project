@@ -8,6 +8,9 @@ import newTaskModal from './js/new-task-modal';
 // IMPORT CSS
 import './main.css'
 import './css/structure.css'
+import './css/header.css'
+import './css/sidebar.css'
+import './css/content.css'
 
 
 // RENDER PROJECT NAMES

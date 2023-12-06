@@ -1,0 +1,26 @@
+#header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+/* LOGO */
+#logo {
+    /* border: 1px dashed black; */
+    display: flex;
+    justify-content: center;
+}
+
+/* APP- NAME */
+#app-name {
+    /* border: 1px dashed black; */
+    display: flex;
+    justify-content: center;
+}
+
+/* PROFILE */
+#profile {
+    /* border: 1px dashed black; */
+    display: flex;
+    justify-content: center;
+}
