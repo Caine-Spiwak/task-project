@@ -1,3 +1,13 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-task-btn {
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
 .task {
     border: 1px solid black;
     padding: 10px;
