@@ -1,4 +1,5 @@
 import projects from "./projects";
+import renderTodos from "./renderTodos";
 
 const renderTasks2 = () => {
    
@@ -32,6 +33,9 @@ const renderTasks2 = () => {
 
         taskContent.appendChild(taskEl)
     })
+
+    // RENDER TODOS
+    renderTodos(index);
 };
 
 export default renderTasks2;
