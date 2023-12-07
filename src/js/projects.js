@@ -1,26 +1,52 @@
 const projects = [
     {
-        'name': "Default Project",
+        'name': "Project A",
         'tasks': [
             {
                 title: "Task 1",
-                description: "This is the description.",
+                description: "This is the task description for project A",
                 dueDate: "2023-11-29",
                 priority: 1,
+                todos: [
+                    {
+                        orderNumber: 1,
+                        description: "this is a todo description number 1"
+                    },
+                    {
+                        orderNumber: 2,
+                        description: "this is a todo description number 1"
+                    },
+                    {
+                        orderNumber: 3,
+                        description: "this is a todo description number 1"
+                    },
+                ]
             },
+        ]
+    },
+    {
+        'name': "Project B",
+        'tasks': [
             {
-                title: "Task 2",
-                description: "This is the description.",
+                title: "Task 1",
+                description: "This is the task description for project B",
                 dueDate: "2023-11-29",
-                priority: 3,
+                priority: 1,
+                todos: [
+                    {
+                        orderNumber: 1,
+                        description: "this is a todo description number 1"
+                    },
+                    {
+                        orderNumber: 2,
+                        description: "this is a todo description number 1"
+                    },
+                    {
+                        orderNumber: 3,
+                        description: "this is a todo description number 1"
+                    },
+                ]
             },
-            {
-                title: "Task 3",
-                description: "This is the description.",
-                dueDate: "2023-11-29",
-                priority: 3,
-            },
-    
         ]
     },
 ];
