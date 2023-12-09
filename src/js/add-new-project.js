@@ -19,7 +19,7 @@ const addNewProject = () => {
     // GET PROJECT LIST ELEMENT
     const projectArea = document.querySelector('#project-list');
 
-    // CLEAR TASKS BEFORE RE-RENDER
+    // CLEAR PROJECTS BEFORE RE-RENDER
     projectArea.innerHTML = '';
 
     // RE-RENDER PROJECT NAMES

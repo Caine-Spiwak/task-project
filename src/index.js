@@ -23,10 +23,10 @@ initialActiveProject();
 renderTasks2();
 
 // ADD PROJECT FORM
-// newProjectModal();
+newProjectModal();
 
 // SWITCH ACTIVE PROJECT - KEEPING IN CASE LOADS FROM LOCAL STORAGE
-// changeActiveProject();
+changeActiveProject();
 
 // ADD TASK MODAL
-// newTaskModal();
+newTaskModal();

@@ -29,13 +29,12 @@ const renderTasks2 = () => {
             </div>
         `;
 
-        renderTodos(task, i);
-
-
+        if (task.todos) {
+            renderTodos(task, i)
+        }
+        
     })
-
-    // RENDER TODOS
-    // renderTodos();
+    
 };
 
 export default renderTasks2;

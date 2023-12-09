@@ -24,7 +24,7 @@ const addNewTask = () => {
     // ADD TASK TO THAT PROJECT
     activeProject.tasks.push(newTask)
 
-    // CLEAR TASKS BEFORE RE_RENDER
+    // CLEAR TASKS BEFORE RE-RENDER
     document.querySelector('#task-content').innerHTML = '';
 
     // RE-RENDER TASKS
